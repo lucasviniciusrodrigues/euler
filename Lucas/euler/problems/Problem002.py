@@ -14,10 +14,12 @@ def main():
 
     while True:
         if firstAux < secondAux:
-            value += firstAux
+            if firstAux % 2 == 0:
+                value += firstAux
             firstAux += secondAux
         else:
-            value += secondAux
+            if secondAux % 2 == 0:
+                value += secondAux
             secondAux += firstAux
 
         if firstAux > limit and secondAux > limit:
